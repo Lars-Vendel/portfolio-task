@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil — Joan García</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+</head>
+<body>
+
+   <!-- PARTE 1 -->
+ <!-- Botones flotantes: elimina el btn-theme suelto -->
+  <button id="to-top" aria-label="Volver arriba">↑</button>
+
+<header class="site-header" role="banner">
+  <!-- Botón menú (móvil) -->
+  <button id="btn-menu"
+          class="btn-menu"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Abrir menú">☰</button>
+
+  <!-- NAV principal -->
+  <nav id="main-nav" class="nav-primary" aria-label="Navegación principal">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#resumen">Perfil</a></li>
+      <li><a href="#educacion">Educación</a></li>
+      <li><a href="#hab-blandas">Habilidades</a></li>
+      <li><a href="#hab-tecnicas">Herramientas y Tecnologías</a></li>
+      <li><a href="#idiomas">Idiomas</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#enlaces">Enlaces</a></li>
+
+      <!-- ÚNICO botón de tema dentro del menú -->
+      <li class="menu-right">
+        <button id="btn-theme" aria-pressed="false" aria-label="Alternar tema">🌓</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Layout 2 columnas -->
+<div class="layout">
+  
+  <!-- Columna principal -->
+  <main class="contenedor">
+    <!-- Encabezado del perfil -->
+    <section id="perfil">
+      <h1>Joan García Briceño</h1>
+      <img src="assets/IMG1/img.jpg" alt="Joan García" class="foto-perfil" loading="lazy">
+    </section>
+
+    <!-- ===== Acordeones ===== -->
+
+    <!-- Resumen -->
+    <section class="accordion" id="resumen">
+      <h2>
+        <button class="acc-toggle" id="acc-resumen" aria-expanded="false" aria-controls="panel-resumen">
+          Resumen Profesional
+        </button>
+      </h2>
+      <div id="panel-resumen" class="acc-panel" role="region" aria-labelledby="acc-resumen" hidden>
+        <p>
+          Mi nombre es <strong>Joan García Briceño</strong>, tengo 23 años, vivo en <strong>Santa Cruz, Guanacaste</strong> y actualmente curso
+          la carrera de <strong>Ingeniería en Sistemas de Información</strong>.  
+          He adquirido experiencia en el desarrollo de aplicaciones web, software y bases de datos, participando en proyectos como el
+          desarrollo de sistemas de gestión de inventarios para tiendas y empresas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section class="accordion" id="educacion">
+      <h2>
+        <button class="acc-toggle" id="acc-educacion" aria-expanded="false" aria-controls="panel-educacion">
+          Educación
+        </button>
+      </h2>
+      <div id="panel-educacion" class="acc-panel" role="region" aria-labelledby="acc-educacion" hidden>
+        <ul>
+          <li><strong>Colegio Técnico Profesional de Santa Cruz</strong> — Técnico medio en Redes</li>
+          <li><strong>Universidad Nacional de Costa Rica</strong> — Ingeniería en Sistemas de Información</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Habilidades Blandas -->
+    <section class="accordion" id="habilidades">
+      <h2>
+        <button class="acc-toggle" id="acc-habilidades" aria-expanded="false" aria-controls="panel-habilidades">
+          Habilidades
+        </button>
+      </h2>
+      <div id="panel-habilidades" class="acc-panel" role="region" aria-labelledby="acc-habilidades" hidden>
+        <ul>
+          <li>Proactividad</li>
+          <li>Autodidacta</li>
+          <li>Trabajo en equipo</li>
+          <li>Comunicación y liderazgo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Herramientas -->
+    <section class="accordion" id="herramientas">
+      <h2>
+        <button class="acc-toggle" id="acc-herramientas" aria-expanded="false" aria-controls="panel-herramientas">
+          Herramientas y Tecnologías
+        </button>
+      </h2>
+      <div id="panel-herramientas" class="acc-panel" role="region" aria-labelledby="acc-herramientas" hidden>
+        <ul>
+          <li><strong>Lenguajes de programación:</strong> C#, C++, SQL, HTML, CSS, JavaScript.</li>
+          <li><strong>Frameworks / Librerías: </strong> .NET, ASP.NET Core, Entity Framework Core.</li>
+          <li><strong>Bases de datos: </strong>RStudio, SQL Server.</li>
+          <li><strong>Entornos de desarrollo:</strong> Visual Studio, Visual Studio Code, Zinjai.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Idiomas -->
+    <section class="accordion" id="idiomas">
+      <h2>
+        <button class="acc-toggle" id="acc-idiomas" aria-expanded="false" aria-controls="panel-idiomas">
+          Idiomas
+        </button>
+      </h2>
+      <div id="panel-idiomas" class="acc-panel" role="region" aria-labelledby="acc-idiomas" hidden>
+        <table class="table-idiomas">
+          <thead>
+            <tr><th>Idioma</th><th>Nivel</th><th>Certificación</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Español</td><td>Nativo</td><td>—</td></tr>
+            <tr><td>Inglés</td><td>Intermedio</td><td>NO</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="accordion" id="experiencia">
+      <h2>
+        <button class="acc-toggle" id="acc-experiencia" aria-expanded="false" aria-controls="panel-experiencia">
+          Experiencia
+        </button>
+      </h2>
+      <div id="panel-experiencia" class="acc-panel" role="region" aria-labelledby="acc-experiencia" hidden>
+        <ul>
+          <li>Participación en desarrollo de sistemas de gestión de inventarios</li>
+          <li>Proyectos académicos de desarrollo web y bases de datos</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =====PARTE 2 Portafolio de Proyectos ===== -->
+    <section id="proyectos">
+      <h2>Portafolio de Proyectos</h2>
+
+      <div class="grid cards">
+        <!-- Proyecto 1 (video)-->
+      <article class="card project" aria-labelledby="p1-title">
+          <div class="card-body">
+            <h3 id="p1-title"></h3>
+            <p>
+            Permite observar el funcionamiento y el Ordenamiento de todos los algoritmo como Bubble sort, merge sort entre otros en tiempo real.
+            </p>
+            <div class="buttons">
+              <a class="btn btn-outline" href="https://proyecto2-ecru.vercel.app/" target="_blank">Ver proyecto</a>
+              <a class="btn btn-outline" href="https://github.com/JoanCR1221/Proyecto2.git" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2  -->
+        <article class="card project" aria-labelledby="p2-title">
+          <div class="card-body">
+            <h3 id="p2-title"> Gestión Hotelera</h3>
+     <p>
+  Sistema de gestión hotelera desarrollado en <strong>C++</strong>, que permite administrar reservas, 
+  check-in/check-out, disponibilidad de habitaciones y generación de reportes para optimizar la ocupación. 
+  <strong>Rol:</strong> implementación de la lógica principal, manejo de datos y desarrollo de funcionalidades clave.
+</p>
+            <div class="buttons">
+  <a class="btn btn-outline" href="detalles1/detalles-hotel.html" target="_blank" rel="noopener">Detalles</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+              <article class="card project" aria-labelledby="p3-title">
+  <div class="card-body">
+    <h3 id="p3-title">Binary Search Tree</h3>
+    <p>
+      Proyecto de un árbol de búsqueda binario desarrollado con <strong>HTML</strong>, <strong>CSS</strong> y 
+      <strong>JavaScript</strong>, implementando métodos de ordenamiento y visualización de datos. 
+      <strong>Rol:</strong> desarrollo completo del frontend, diseño de la interfaz y visualización de resultados.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-outline" href="https://proyecto-3-nu.vercel.app//" target="_blank">Ver proyecto</a>
+      <a class="btn btn-outline" href="detalles1/detalles-bst.html" target="_blank" rel="noopener">Detalles</a>
+    </div>
+  </div>
+</article>
+      </div>
+    </section>
+
+<!-- =====FIN PARTE 2 Portafolio de Proyectos ===== -->
+
+
+
+  <!-- Continuacion PARTE 1 -->
+
+    <!-- Contacto -->
+    <section class="accordion" id="contacto">
+      <h2>
+        <button class="acc-toggle" id="acc-contacto" aria-expanded="false" aria-controls="panel-contacto">
+          Contacto
+        </button>
+      </h2>
+      <div id="panel-contacto" class="acc-panel" role="region" aria-labelledby="acc-contacto" hidden>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="sucorreo@ejemplo.com" required>
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <button class="btn" type="submit">Enviar</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Columna lateral -->
+  <aside class="sidebar" aria-label="Información lateral">
+    <section class="widget">
+      <h3>Datos rápidos</h3>
+      <ul class="plain">
+        <li><strong>Ubicación:</strong> Santa Cruz, CR</li>
+        <li><strong>Interés:</strong> Desarrollo Web / Bases de Datos</li>
+        <li><strong>Disponibilidad:</strong> Práctica Profesional</li>
+      </ul>
+    </section>
+
+    <section class="widget">
+      <h3>Contacto</h3>
+      <ul class="plain">
+        <li><a href="mailto:jandree1221@gmail.com">jandree1221@gmail.com</a></li>
+        <li><a href="tel:+50672921010">+506 7292-1010</a></li>
+      </ul>
+    </section>
+
+   <section class="widget" id="enlaces">
+    <h3>Enlaces</h3>
+    <ul class="plain">
+      <li><a href="portfolio.html" target="_blank">Portafolio</a></li>
+      <li><a href="https://github.com/JoanCR1221" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+    <section class="widget">
+      <h3>Descargas</h3>
+      <a class="btn btn-outline" href="assets/CV_JoanGarcia.pdf" download>Descargar CV (PDF)</a>
+    </section>
+  </aside>
+
+</div>
+
+
+  <footer class="site-footer">
+    <small>© 2025 Joan García — <a>Portafolio</a></small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

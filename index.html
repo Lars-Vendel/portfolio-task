@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfiles Profesionales</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <meta name="description" content="Listado de perfiles profesionales con enlaces a portafolios." />
+</head>
+<body>
+  <!-- Botón volver arriba -->
+  <button id="to-top" aria-label="Volver arriba">↑</button>
+
+  <!-- Cabecera con título y toggle de tema -->
+  <header class="site-header" role="banner">
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li class="menu-right">
+          <button id="btn-theme" aria-pressed="false" aria-label="Alternar tema">🌓</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="contenedor" role="main">
+    <section id="perfiles" class="perfiles" aria-labelledby="h-perfiles">
+      <h1 id="h-perfiles" style="margin: 8px 0 16px;">Perfiles Profesionales</h1>
+
+     <div class="profiles-grid">
+  <!-- Perfil 1: Pablo -->
+  <article class="profile-card project-card">
+    <a href="portfolio.html" class="profile-link" aria-label="Ver portafolio de Pablo">
+      <img src="assets/IMG/IMG.jpg"
+           alt="Foto de Pablo"
+           class="profile-avatar"
+           loading="lazy">
+    </a>
+    <h2 class="profile-name" id="pablo-nombre">
+      <a href="portfolio.html" class="profile-link">Pablo Gómez Villegas</a>
+    </h2>
+    <p class="profile-role">Frontend — UX/UI</p>
+  </article>
+
+  <!-- Perfil 2: Joan -->
+  <article class="profile-card project-card" data-title="Portafolio de Joan">
+    <a href="portfolio1.html" class="profile-link" aria-label="Ver portafolio de Joan">
+      <img src="assets/IMG1/img.jpg"
+           alt="Foto de Joan"
+           class="profile-avatar"
+           loading="lazy">
+    </a>
+    <h2 class="profile-name" id="joan-nombre">
+      <a href="portfolio1.html" class="profile-link">Joan García</a>
+    </h2>
+    <p class="profile-role">Ing. en Sistemas — Backend</p>
+  </article>
+</div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 — Perfiles</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
