@@ -1,6 +1,6 @@
 # Portafolio — Perfiles Profesionales
 
-Sitio **estático** con un listado de perfiles y portafolios individuales. Incluye **modo claro/oscuro**, **acordeones**, **efectos hover**, **formulario de contacto con validación** y **diseño responsivo**. Construido con **HTML, CSS y JavaScript** cuidando semántica y accesibilidad (ARIA).
+Sitio **estático** con un listado de perfiles y portafolios individuales. Incluye **modo claro/oscuro**, **acordeones**, **efectos hover**, **formulario de contacto con validación** y **diseño responsivo**. Construido con **HTML, CSS y JavaScript** cuidando semántica y accesibilidad.
 
 ---
 
