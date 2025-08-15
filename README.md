@@ -6,23 +6,28 @@ Sitio **estático** con un listado de perfiles y portafolios individuales. Inclu
 
 ## 🧭 Estructura
 
-├── index.html # Listado de perfiles
-├── portfolio.html # Portafolio
-├── portfolio1.html # Portafolio1
-├── detalles1/ │
-│ ├── detalles-Algoritmos.html
-│ ├── detalles-ecommerce.html
-│ ├── detalles-hotel.html
-│ └── detalles-bst.html
-├── assets/
-│ ├── favicon.png
-│ ├── CV.pdf
-│ ├── CV1.pdf
-│ ├── IMG/IMG.jpg
-│ └── IMG1/img.jpg
-├── styles.css
-├── script.js
-└── README.md
+```text
+.
+├─ index.html                  # Listado de perfiles
+├─ portfolio.html              
+├─ portfolio1.html             
+├─ detalles1/
+│  ├─ detalles-Algoritmos.html
+│  ├─ detalles-ecommerce.html
+│  ├─ detalles-hotel.html
+│  └─ detalles-bst.html
+├─ assets/
+│  ├─ favicon.png
+│  ├─ CV.pdf
+│  ├─ CV1.pdf
+│  ├─ IMG/
+│  │  └─ IMG.jpg
+│  └─ IMG1/
+│     └─ img.jpg
+├─ styles.css
+├─ script.js
+└─ README.md
+
 
 
 ## ✨ Funcionalidades
