@@ -2,9 +2,6 @@
 
 Sitio **estático** con un listado de perfiles y portafolios individuales. Incluye **modo claro/oscuro**, **acordeones**, **efectos hover**, **formulario de contacto con validación** y **diseño responsivo**. Construido con **HTML, CSS y JavaScript** cuidando semántica y accesibilidad (ARIA).
 
-- **Repo:** https://github.com/Lars-Vendel/portfolio-task
-- **Demo (GitHub Pages):** *(actívala en Settings → Pages)* https://lars-vendel.github.io/portfolio-task/
-
 ---
 
 ## 🧭 Estructura
